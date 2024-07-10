@@ -6,5 +6,6 @@ public class Rebase {
         System.out.println("rebase4 d");
         System.out.println("rebase5 e");
         System.out.println("master run");
+        System.out.println("branch b");
     }
 }
