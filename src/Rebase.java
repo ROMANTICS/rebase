@@ -11,5 +11,6 @@ public class Rebase {
         System.out.println("branch b2");
         System.out.println("work");
         System.out.println("dev");
+        System.out.println("cleanup");
     }
 }
