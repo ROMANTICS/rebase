@@ -12,5 +12,6 @@ public class Rebase {
         System.out.println("work");
         System.out.println("dev");
         System.out.println("cleanup");
+        System.out.println("master continue forward!");
     }
 }
