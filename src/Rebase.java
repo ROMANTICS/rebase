@@ -13,5 +13,6 @@ public class Rebase {
         System.out.println("dev");
         System.out.println("cleanup");
         System.out.println("pr first commit!");
+        System.out.println("pr second commit!");
     }
 }
