@@ -14,5 +14,6 @@ public class Rebase {
         System.out.println("cleanup");
         System.out.println("pr first commit!");
         System.out.println("pr second commit!");
+        System.out.println("master continue forward!");
     }
 }
