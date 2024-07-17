@@ -17,6 +17,7 @@ public class Rebase {
         System.out.println("master continue forward!");
         System.out.println("issue #2 !");
         System.out.println("pr 3 !");
+        System.out.println("commit signature verification !");
 
     }
 }
