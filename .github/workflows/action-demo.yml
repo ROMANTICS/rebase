@@ -2,6 +2,16 @@
 name: action-demo
 on:
   workflow_dispatch:
+    inputs:
+      a:
+        description: 'a'
+        required: true
+        default: 'a'
+      b:
+        description: 'b'
+        required: true
+        default: 'b'
+      
 jobs:
   bbb:
     runs-on: ubuntu-latest
