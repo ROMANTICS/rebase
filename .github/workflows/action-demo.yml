@@ -1,29 +1,28 @@
-name: Pull and Save Docker Image windows-arm
+name: action-demo
 
 on:
   workflow_dispatch:
     inputs:
-      docker_images:
-        description: '请填写docker镜像名称 多个用英文逗号分开'
+      a:
+        description: 'a'
         required: true
-        default: 'dockcross/base:latest'  # 设置默认的 Docker 镜像列表
-      suffix:
-        description: '请填写压缩包名称'
-        required: true
-        default: 'image'
+        default: 'a'  # 设置默认的 Docker 镜像列表
 
 jobs:
-  pull_and_package:
+  demo:
     runs-on: ubuntu-latest
-
+    
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
-    - name: Pull Docker Images and Package
+    - name: Setup Java JDK
+      uses: actions/setup-java@v4.2.1
+      with:
+        distribution: jdk     
+    - name: command
       run: |
-        images="${{ github.event.inputs.docker_images }}"
-        IFS=',' read -r -a image_array <<< "$images"
-        for image in "${image_array[@]}"; do
-          echo "${image}"
-        done
+        a="${{ github.event.inputs.a }}"
+        echo "${a}"
+        java -version
+        pwd
+        ls
