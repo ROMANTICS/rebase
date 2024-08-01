@@ -18,7 +18,8 @@ jobs:
     - name: Setup Java JDK
       uses: actions/setup-java@v4.2.1
       with:
-        distribution: jdk     
+        distribution: jdk
+        java-version: 11
     - name: command
       run: |
         a="${{ github.event.inputs.a }}"
