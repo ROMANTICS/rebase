@@ -16,11 +16,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     - name: Setup Java JDK
-      uses: actions/setup-java@v4.2.1
-      with:
-        java-version: '17'
-        distribution: 'temurin'
-        cache: maven
+      run: apt-get install jdk
     - name: command
       run: |
         a="${{ github.event.inputs.a }}"
